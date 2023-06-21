@@ -1,0 +1,32 @@
+let nftArray = [];
+
+function mintNFT(name, description, image) {
+
+  let nft = {
+    name: name,
+    description: description,
+    image: image
+  };
+
+
+  nftArray.push(nft);
+}
+function listNFTs() {
+  for (let i = 0; i < nftArray.length; i++) {
+    let nft = nftArray[i];
+    console.log("Name: " + nft.name);
+    console.log("Description: " + nft.description);
+    console.log("Image: " + nft.image);
+    console.log("--------------------");
+  }
+}
+function getTotalSupply() {
+  return nftArray.length;
+}
+
+mintNFT("EV1", "EV NFT 1", "image1.jpg");
+mintNFT("EV2", "EV NFT 2", "image2.jpg");
+mintNFT("EV3", "EV NFT 3", "image3.jpg");
+
+listNFTs();
+console.log("Total NFTs: " + getTotalSupply()); 
