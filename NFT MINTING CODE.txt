@@ -21,12 +21,14 @@ function listNFTs() {
   }
 }
 function getTotalSupply() {
-  return nftArray.length;
+  console.log("Total no. of NFTs : " + nftArray.length)
 }
 
 mintNFT("EV1", "EV NFT 1", "image1.jpg");
 mintNFT("EV2", "EV NFT 2", "image2.jpg");
 mintNFT("EV3", "EV NFT 3", "image3.jpg");
+mintNFT("EV4", "EV NFT 4", "image4.jpg");
+mintNFT("EV5", "EV NFT 5", "image5.jpg");
 
 listNFTs();
-console.log("Total NFTs: " + getTotalSupply()); 
+getTotalSupply();
